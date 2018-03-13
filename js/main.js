@@ -3,57 +3,38 @@ const renderBoard = function () {
     $('td').addClass('box');
   };
 
+let playerX = "X";
+let playerO = "O";
+let startPlayer = "Starting player"; // this doesn't work if initialised as an emty string
+let player = "";
+
 $(document).ready(function() {
   renderBoard();
 
-/*
-//  Should make this the selector class instead of using id#crosses and id#noughts.
-// Could make the player = this. find closest i? couldn't get it to work!
-$('.selector').on('click', function(){
-  let $startPlayer = $(this).closest('i').find().slidedown;
-  console.log($startPlayer);
-});
-*/
-
-  let playerX = "X";
-  let playerO = "O";
-  let startPlayer = "";
-  let nextPlayer = "";
-
   $('#crosses').on('click', function(){
       startPlayer = playerX;
+      player = playerX
       $('span').text(startPlayer);
-      return startPlayer;
+      //return startPlayer; // this is not needed as it's not returning to anything
     });
 
     $('#noughts').on('click', function(){
       startPlayer = playerO;
+      player = playerO;
       $('span').text(startPlayer);
-      return startPlayer;
+      //return startPlayer; // this is not needed as it's not returning to anything
     });
 
-// stop it from proceeding if the X or O is not selected first?
+//console.log ( $('span').text(startPlayer).html() ); // Scope: This logs "Starting player" at this point
 
-  let player = "";
-
-  // player = $('span').text();
-  // console.log(player); //this isn't working !!!
-
-  if (startPlayer === playerX) {
-    player = playerX; // IT'S NOT PICKING THIS UP
-  } else {
-        console.log(startPlayer);
-    player = playerO;
-  }
-
-//let player = playerX; //THIS WORKS BECAUSE IT'S HARD-CODED
-
-if (player){
+if (startPlayer){
 $('.box').on('click', function(){
-    $(this).text(player);
+    $(this).text(player); // this is the point at which the startPlayer is set to X or O - ie. it doesn't happen until the box is clicked.
+    //console.log ( $('span').text(startPlayer).html() )
+
+    // flip player turn here
   });
 }
-
 
 //toggle between X & O in span to change players?
 
@@ -67,6 +48,7 @@ $('.box').on('click', function(){
   $('.restart').on('click', function(){
     $('td').text('');
     $('span').html('');
+    player = "";
     });
 
 });
