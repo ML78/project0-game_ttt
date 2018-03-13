@@ -1,11 +1,12 @@
 const renderBoard = function () {
     $('table').addClass('grid');
     $('td').addClass('box');
+    //$('span').hide(); //this isn't working
   };
 
 let playerX = "X";
 let playerO = "O";
-let startPlayer = "Starting player"; // this doesn't work if initialised as an emty string
+let startPlayer = "Starting player"; // this doesn't work if initialised as an empty string
 let player = "";
 //let nextMove = "";
 
@@ -31,55 +32,33 @@ $(document).ready(function() {
 
 if (startPlayer){
 
-$('.box').on('click', function(){
+  $('.box').on('click', function(){
 
-    $(this).text(player); // this is the point at which the startPlayer is set to X or O - ie. it doesn't happen until the td with box class is clicked.
-    //console.log ( $('span').text(startPlayer).html() )
+      $(this).text(player); // this is the point at which the startPlayer is set to X or O - ie. it doesn't happen until the td with box class is clicked.
+      //console.log ( $('span').text(startPlayer).html() )
 
-    // flip player turn here
+      // flip player turn here
 
-/*
-    if(startPlayer == playerX) {
-      //playerX = true;
-      //playerO = false;
-    }
-    else if (startPlayer == playerO) {
-      //playerO = true;
-      //playerX = false;
-    }
-    */
+      if(player == playerX) {
+        nextMove = true;
+      } else if (player == playerO) {
+        nextMove = false;
+      }
 
-    if(player == playerX) {
-      nextMove = true;
-    }
-    else if (player == playerO) {
-      nextMove = false;
-    }
+      if (nextMove){
+        $('span').text(playerO);
+        player = playerO;
+      } else {
+        $('span').text(playerX);
+        player = playerX;
+      }
 
-    if (nextMove){
-      $('span').text(playerO);
-
-    } else {
-      $('span').text(playerX);
-    }
-
-  });
-}
-
-//toggle between X & O in span to change players?
-
-/*
-  $('td').on('click', function(){
-     $('#player').toggle();
-     });
-*/
-
+    });
+  }
 
   $('.restart').on('click', function(){
     $('td').text('');
     $('span').html('');
-    //playerX = "";
-    //player0 = "";
     player = "";
     });
 
