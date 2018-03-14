@@ -1,11 +1,25 @@
-/*@import url('https://fonts.googleapis.com/css?family=Kalam');*/
-/* font-family: 'Kalam', cursive; */
-
- @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
-/* font-family: 'Gochi Hand', cursive; */
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 body {
   background-color: rgba(128,128,128,0.1);
+}
+
+header {
+    background-color: black;
+    margin: 0 auto;
+  }
+
+h1 {
+  font-size: 70px;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+td {
+  font-size: 200%;
 }
 
 .container {
@@ -16,7 +30,6 @@ body {
   font-family: 'Gochi Hand', cursive;
   background-color: white;
   color: black;
-
 }
 
 .board {
@@ -39,20 +52,6 @@ body {
     width: 120px;
     height: 120px;
     border: 2px solid rgba(64,224,208,1);
-}
-
-header {
-    background-color: black;
-    margin: 0 auto;
-  }
-
-h1 {
-  font-size: 70px;
-  color: white;
-}
-
-h2 {
-  font-size: 40px;
 }
 
 .selector {
@@ -99,15 +98,10 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
-
 }
 
 #cross {
   color: blue;
   font-size: 30px;
   padding: 10px;
-}
-
-td {
-  font-size: 200%;
 }
