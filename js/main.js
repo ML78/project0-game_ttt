@@ -99,7 +99,7 @@ $(document).ready(function() {
     };
 
     //displays a message if there is a win or draw
-    var score = checkWin();
+    let score = checkWin();
     $('.score').show();
     $('.score').text(score);
   });
