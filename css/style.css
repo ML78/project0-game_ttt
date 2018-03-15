@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
 
 body {
-  background-color: rgba(128,128,128,0.1);
+  background-image: url("https://i.imgur.com/ROTS79E.jpg");
+  background-size: cover;
+  /* background-color: rgba(0,0,0,1); */
 }
 
 header {
@@ -12,6 +14,7 @@ header {
 h1 {
   font-size: 70px;
   color: white;
+  margin: 0 auto;
 }
 
 h2 {
@@ -22,59 +25,68 @@ td {
   font-size: 200%;
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
-  width: 985px;
-  height: 985px;
-  font-family: 'Gochi Hand', cursive;
-  background-color: white;
-  color: black;
-}
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+    height: 950px;
+    font-family: 'Gochi Hand', cursive;
+    background-color: white;
+    color: black;
+  }
 
 .board {
-  background-color: rgba(64,224,208,0.3);
   position: relative;
-  height: 500px;
+  height: 425px;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .grid {
     position: relative;
-    left: 300px;
-    top: 50px;
-    border: 4px solid rgba(64,224,208,1);
-    border-spacing: 0px;
+    left: 200px;
+    background-color: rgba(64,224,208,0.1);
+    box-shadow: 0 0 15px #40E0D0;
 }
 
 .box {
     width: 120px;
     height: 120px;
-    border: 2px solid rgba(64,224,208,1);
+    border: 5px solid rgba(64,224,208,1);
 }
 
 .selector {
   border: 4px solid rgba(64,224,208,1);
-  width: 300px;
+  width: 50px;
   height: 50px;
   background-color: yellow;
-  margin: 20px;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 0;
+  border-radius: 50%;
 }
 
 .turn {
   position: relative;
-  top: 100px;
+  top: 20px;
   text-align: center;
   font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .score {
   position: relative;
-  top: 150px;
+  top: 50px;
   text-align: center;
   font-size: 40px;
   color: orange;
+  margin-top: 0;
+}
+
+.score:hover {
+    transition: all 1s;
+    transform: rotate(360deg);
 }
 
 .restart {
@@ -83,6 +95,15 @@ td {
     background-color: red;
     color: white;
     font-size: 30px;
+    max-width: 200px;
+    line-height: 2px;
+    margin-left: 300px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.ghost {
+  color: white;
 }
 
 #noughts {

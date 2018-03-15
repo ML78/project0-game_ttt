@@ -13,11 +13,11 @@ For more information about the game strategy visit: [Wikipedia](https://en.wikip
 1. Visually displays when X or O wins if a player gets 3 to line up (in a row, column or diagonally), or shows a draw if neither wins.
 1. A _Restart Game_ button is included to reset the game.
 
-## Approach
+### Approach
 * The app has separate HTML, CSS, and JavaScript files. It endeavours to adhere to best practices:
   * using semantic markup for HTML and CSS; and
   * applying the principles of ***KISS*** (Keep it Simple Stupid) and ***DRY*** (Don't Repeat Yourself).
-
+* jQuery is used to respond to user click events.
 
 ## Dedication
 
@@ -30,7 +30,7 @@ And Bill Murray!
  http://mentalfloss.com/article/65913/22-awesome-and-inspiring-bill-murray-quotes
 
 ## TODO
-Please refer to the `todo.md` file.
+Please refer to the file: `todo.md`
 
 ## Terms & Conditions
 This project is licensed under the MIT License.
