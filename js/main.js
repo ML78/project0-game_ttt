@@ -82,7 +82,7 @@ $(document).ready(function() {
                 winnerMessage += `Winner: ${winner}`;
                 $('.turn').addClass('ghost');
             } else if (gameBoard[0]!=null && gameBoard[1]!=null && gameBoard[2]!=null && gameBoard[3]!=null && gameBoard[4]!=null && gameBoard[5]!=null && gameBoard[6]!=null && gameBoard[7]!=null && gameBoard[8]!=null){
-                winnerMessage += `It's a draw!`;
+                winnerMessage += `Draw!`;
                 $('.turn').addClass('ghost');
             } else {
               winnerMessage += "";
@@ -111,4 +111,3 @@ $(document).ready(function() {
     });
 
 });
-
