@@ -3,13 +3,12 @@
 body {
   background-image: url("https://i.imgur.com/ROTS79E.jpg");
   background-size: cover;
-  /* background-color: rgba(0,0,0,1); */
 }
 
 header {
     background-color: black;
     margin: 0 auto;
-  }
+}
 
 h1 {
   font-size: 70px;
@@ -25,15 +24,15 @@ td {
   font-size: 200%;
 }
 
-  .container {
-    margin: 0 auto;
-    text-align: center;
-    max-width: 800px;
-    height: 950px;
-    font-family: 'Gochi Hand', cursive;
-    background-color: white;
-    color: black;
-  }
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 800px;
+  height: 950px;
+  font-family: 'Gochi Hand', cursive;
+  background-color: white;
+  color: black;
+}
 
 .board {
   position: relative;
@@ -95,9 +94,9 @@ td {
     background-color: red;
     color: white;
     font-size: 30px;
-    max-width: 200px;
+    max-width: 100px;
     line-height: 2px;
-    margin-left: 300px;
+    margin-left: 350px;
     margin-top: 10px;
     border-radius: 10px;
 }
