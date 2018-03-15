@@ -6,7 +6,6 @@ const renderBoard = function () {
 
 let playerX = "X";
 let playerO = "O";
-let startPlayer = "Starting player";
 let player = "";
 let nextMove;
 let gameBoard = [];
@@ -15,21 +14,18 @@ $(document).ready(function() {
   renderBoard();
 
   $('#crosses').on('click', function(){
-      startPlayer = playerX;
       player = playerX
-      $('span').text(startPlayer);
+      $('span').text(player);
       $('.turn').show();
       });
 
     $('#noughts').on('click', function(){
-      startPlayer = playerO;
       player = playerO;
-      $('span').text(startPlayer);
+      $('span').text(player);
       $('.turn').show();
     });
 
 
-if (startPlayer){
   $('.box').on('click', function(){
       $(this).text(player);
       gameBoard[this.id] = player;
@@ -101,7 +97,7 @@ if (startPlayer){
         $('.score').show();
         $('.score').text(score);
     });
-  }
+
 
   $('.restart').on('click', function(){
     $('td').text('');
@@ -115,3 +111,4 @@ if (startPlayer){
     });
 
 });
+
