@@ -27,7 +27,7 @@ td {
 .container {
   margin: 0 auto;
   text-align: center;
-  width: 800px;
+  width: 700px;
   height: 950px;
   font-family: 'Gochi Hand', cursive;
   background-color: white;
@@ -38,12 +38,12 @@ td {
   position: relative;
   height: 425px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .grid {
     position: relative;
-    left: 200px;
+    left: 150px;
     background-color: rgba(64,224,208,0.1);
     box-shadow: 0 0 15px #40E0D0;
 }
@@ -96,7 +96,7 @@ td {
     font-size: 30px;
     max-width: 100px;
     line-height: 2px;
-    margin-left: 350px;
+    margin-left: 300px;
     margin-top: 10px;
     border-radius: 10px;
 }
