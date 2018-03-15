@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   font-size: 40px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 td {
@@ -31,7 +31,7 @@ td {
   width: 700px;
   height: 950px;
   font-family: 'Gochi Hand', cursive;
-  background-color: white;
+  background-color: rgba(255,255,255,1);
   color: black;
 }
 
@@ -40,6 +40,7 @@ td {
   height: 425px;
   margin: auto;
   margin-top: 120px;
+  margin-bottom: 0;
 }
 
 .grid {
@@ -99,7 +100,7 @@ td {
 }
 
 .ghost {
-  color: white;
+  color: rgba(255,255,255,1);
 }
 
 #noughts {
@@ -121,4 +122,9 @@ td {
   color: blue;
   font-size: 30px;
   padding: 10px;
+}
+
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
 }
